@@ -1,4 +1,4 @@
-/* Reset/Normalize */
+/* Normalize */
 body {
   font-size: 15px;
   font-family: "Arial", "Helvetica", sans-serif;
@@ -8,25 +8,75 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Global */
+/* Globals */
 .container {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
 }
 
+.highlight {
+  color: #f4f4f4;
+  border-bottom: 2px solid #555;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* Header */
 header {
   background-color: #3897f0;
-  color: lightgrey;
+  color: #555;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: 3px solid lightgrey;
+  border-bottom: 3px solid #555;
 }
 
 header a {
-  color: lightgrey;
+  color: #555;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
+}
+
+header li {
+  display: inline;
+  padding: 0px 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 12px;
+}
+
+header a:hover {
+  color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background-image: url(../images/bg.jpg);
+  background-position: 50% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #555;
+  text-align: center;
+}
+
+#showcase h1 {
+  font-size: 55px;
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
