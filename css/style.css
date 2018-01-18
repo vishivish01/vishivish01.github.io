@@ -15,11 +15,6 @@ body {
   overflow: hidden;
 }
 
-.highlight {
-  color: #f4f4f4;
-  border-bottom: 2px solid #555;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -60,6 +55,11 @@ header #branding h1 {
   margin: 0;
 }
 
+header #branding .highlight {
+  color: #f4f4f4;
+  border-bottom: 2px solid #555;
+}
+
 header nav {
   float: right;
   margin-top: 12px;
@@ -81,13 +81,6 @@ header a:hover {
   text-align: center;
 }
 
-#showcase img {
-  margin-top: 20px;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-}
-
 #showcase h1 {
   font-size: 55px;
   margin-top: 100px;
@@ -97,6 +90,7 @@ header a:hover {
 #showcase p {
   font-size: 20px;
   font-variant: small-caps;
+  letter-spacing: 0.1em;
 }
 
 /* About */
@@ -112,6 +106,13 @@ header a:hover {
   padding: 10px;
 }
 
+#about i, h3 {
+  color: #333;
+}
+
+#about p {
+  color: #555;
+}
 /* Projects */
 #projects h2 {
   text-align: center;
@@ -125,6 +126,10 @@ header a:hover {
   padding: 10px;
 }
 
+#projects a {
+  color: #3897f0;
+}
+
 /* Contact */
 #contact h2 {
   text-align: center;
@@ -135,4 +140,8 @@ header a:hover {
   text-decoration: none;
   font-size: 60px;
   transition: all ease-in-out 250ms;
+}
+
+#contact i {
+
 }
