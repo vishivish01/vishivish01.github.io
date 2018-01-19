@@ -67,7 +67,7 @@ header nav {
 
 header a:hover {
   color: #f4f4f4;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /* Showcase */
@@ -113,8 +113,10 @@ header a:hover {
 #about p {
   color: #555;
 }
+
 /* Projects */
 #projects h2 {
+  color: #333;
   text-align: center;
 }
 
@@ -132,16 +134,46 @@ header a:hover {
 
 /* Contact */
 #contact h2 {
+  color: #333;
   text-align: center;
 }
 
 #contact li a {
-  color: #555;
+  color: #333;
+  display: inline;
   text-decoration: none;
+  list-style: none;
   font-size: 60px;
-  transition: all ease-in-out 250ms;
 }
 
-#contact i {
+#contact .box {
+  width: 33%;
+  float: left;
+  text-align: center;
+  list-style: none;
+}
 
+#contact a:hover {
+  color: #555;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #FFF;
+  background-color: #333;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #about .box {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
 }
